@@ -1,15 +1,20 @@
 import React, { useRef, useState } from "react";
 import { Play, Pause, Volume2, VolumeX } from "lucide-react";
+import v1 from "/video1.mp4";
+import v2 from "/video2.mp4";
+import v3 from "/video3.mp4";
+import v4 from "/video4.mp4";
+import v5 from "/video5.mp4";
 
 export function VideoStrip() {
     const videoList = [
-        "../../video1.mp4",
-        "../../video2.mp4",
-        "../../video3.mp4",
-        "../../video4.mp4",
-        "../../video5.mp4",
-        "../../video1.mp4",
-        "../../video2.mp4"
+        v1,
+        v2,
+        v3,
+        v4,
+        v5,
+        v1,
+        v2
     ];
     const loop = [...videoList, ...videoList];
 
